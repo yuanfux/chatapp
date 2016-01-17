@@ -15,7 +15,12 @@ class CusLoginViewController: UIViewController, PFLogInViewControllerDelegate, P
     var signUpVC: PFSignUpViewController = PFSignUpViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
-        PFUser.logOut()
+        
+        if(PFUser.currentUser() != nil){
+            
+            PFUser.logOut()
+            
+        }
         
         self.loginVC.delegate = self
         
@@ -54,7 +59,7 @@ class CusLoginViewController: UIViewController, PFLogInViewControllerDelegate, P
     //login delegate methods
     
     func logInViewController(logInController: PFLogInViewController, shouldBeginLogInWithUsername username: String, password: String) -> Bool {
-        if(!username.isEmpty && !password.isEmpty ){
+        if(!username.isEmpty || !password.isEmpty ){
             return true
         }
         else{
@@ -122,10 +127,12 @@ class CusLoginViewController: UIViewController, PFLogInViewControllerDelegate, P
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if(segue.identifier == "segue1"){
-            
+            //print("assign value of sender")
+            //print("value: \(PFUser.currentUser()?.username)")
              let JSQvc = segue.destinationViewController as! JSQViewController
-             JSQvc.sender = PFUser.currentUser()?.username
+             JSQvc.passValue = (PFUser.currentUser()?.username)!
             
+            //print("JSQvc.sender: \(JSQvc.sender)")
         }
     }
     

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class JSQViewController: JSQMessagesViewController {
 
     var messages = [Message]()
@@ -17,7 +18,7 @@ class JSQViewController: JSQMessagesViewController {
     //var senderImageUrl: String! //???
     var batchMessages = true
     var ref: Firebase!
-
+    var passValue: String = ""
     // *** STEP 1: STORE FIREBASE REFERENCES
     
     var messagesRef: Firebase!
@@ -94,9 +95,8 @@ class JSQViewController: JSQMessagesViewController {
         automaticallyScrollsToMostRecentMessage = true
         
         //navigationController?.navigationBar.topItem?.title = "Logout"
-        
         sender = (sender != nil) ? sender : "Anonymous"
-        
+        sender = passValue
         //let profileImageUrl = user?.providerData["cachedUserProfile"]?["profile_image_url_https"] as? NSString
         
 //        if let urlString = profileImageUrl {
