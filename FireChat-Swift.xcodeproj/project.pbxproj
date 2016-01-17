@@ -82,6 +82,9 @@
 		642B16341C49A09D004A7FBD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642B16331C49A09D004A7FBD /* StoreKit.framework */; };
 		642B16351C49A0D0004A7FBD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 641B17091C49901A002ABA37 /* libz.tbd */; };
 		642B16361C49A0D6004A7FBD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 641B170B1C499023002ABA37 /* libsqlite3.tbd */; };
+		64FFDEB71C4AE0FA00859EF8 /* CusLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDEB61C4AE0FA00859EF8 /* CusLoginViewController.swift */; };
+		64FFDEB91C4AFA0700859EF8 /* JSQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDEB81C4AFA0700859EF8 /* JSQViewController.swift */; };
+		64FFDEBB1C4B154600859EF8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64FFDEBA1C4B154600859EF8 /* Launch Screen.storyboard */; };
 		921444D8FD4C2A3212E1FCED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C78278E883FDD950909701B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -205,6 +208,9 @@
 		642B162F1C49A08B004A7FBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		642B16311C49A096004A7FBD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		642B16331C49A09D004A7FBD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		64FFDEB61C4AE0FA00859EF8 /* CusLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CusLoginViewController.swift; sourceTree = "<group>"; };
+		64FFDEB81C4AFA0700859EF8 /* JSQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSQViewController.swift; sourceTree = "<group>"; };
+		64FFDEBA1C4B154600859EF8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		935DAF2FBB51417A4A1FFBC3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AE27DDF155E22EC1CDF0E5F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C78278E883FDD950909701B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,10 +313,13 @@
 			children = (
 				5FFF76BE199C191F00AE0269 /* AppDelegate.swift */,
 				5FFF76C2199C191F00AE0269 /* Main.storyboard */,
+				64FFDEBA1C4B154600859EF8 /* Launch Screen.storyboard */,
 				5FFF76C5199C191F00AE0269 /* Images.xcassets */,
 				5FFF76BC199C191F00AE0269 /* Supporting Files */,
 				5FFF76E9199C19EC00AE0269 /* FireChat-Swift-Bridging-Header.h */,
+				64FFDEB81C4AFA0700859EF8 /* JSQViewController.swift */,
 				5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */,
+				64FFDEB61C4AE0FA00859EF8 /* CusLoginViewController.swift */,
 				638910FF199E968100B8998F /* LoginViewController.swift */,
 				5FF98CB119A51B8E0041E81A /* Message.swift */,
 				5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */,
@@ -606,6 +615,7 @@
 				5FFF76C4199C191F00AE0269 /* Main.storyboard in Resources */,
 				5FFF76C6199C191F00AE0269 /* Images.xcassets in Resources */,
 				5FFF77DB199C1F6C00AE0269 /* bubble_min_tailless.png in Resources */,
+				64FFDEBB1C4B154600859EF8 /* Launch Screen.storyboard in Resources */,
 				5FFF7807199C1F6C00AE0269 /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				5FFF77E4199C1F6C00AE0269 /* camera@2x.png in Resources */,
 				5FFF77D9199C1F6C00AE0269 /* bubble_min.png in Resources */,
@@ -714,12 +724,14 @@
 				5FFF77F7199C1F6C00AE0269 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				5FFF77F1199C1F6C00AE0269 /* JSQMessagesAvatarFactory.m in Sources */,
 				5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */,
+				64FFDEB91C4AFA0700859EF8 /* JSQViewController.swift in Sources */,
 				5FFF77F8199C1F6C00AE0269 /* JSQMessage.m in Sources */,
 				5FFF77F3199C1F6C00AE0269 /* JSQMessagesTimestampFormatter.m in Sources */,
 				5FFF77FA199C1F6C00AE0269 /* JSQMessagesCollectionViewCell.m in Sources */,
 				5FFF77EE199C1F6C00AE0269 /* JSQMessagesKeyboardController.m in Sources */,
 				5FFF7801199C1F6C00AE0269 /* JSQMessagesLabel.m in Sources */,
 				5FFF7802199C1F6C00AE0269 /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
+				64FFDEB71C4AE0FA00859EF8 /* CusLoginViewController.swift in Sources */,
 				5FFF77FF199C1F6C00AE0269 /* JSQMessagesComposerTextView.m in Sources */,
 				5FFF77F5199C1F6C00AE0269 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				5FFF77EA199C1F6C00AE0269 /* NSString+JSQMessages.m in Sources */,

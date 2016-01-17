@@ -109,7 +109,7 @@ class MessagesViewController: JSQMessagesViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        collectionView!.collectionViewLayout.springinessEnabled = true
+        collectionView!.collectionViewLayout.springinessEnabled = false
     }
     
     override func viewWillDisappear(animated: Bool) {
